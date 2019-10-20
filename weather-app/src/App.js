@@ -5,7 +5,6 @@ import './App.css';
 import Titles from './components/titles';
 import Forms from './components/form';
 import Weather from './components/weather';
-import KEY from './components/API_KEY';
 
 const API_KEY = 'f755d47212d4330310d42041f6b06a21';
 // http://api.openweathermap.org/data/2.5/weather?q=Manchester,uk&appid=f755d47212d4330310d42041f6b06a21&=metric
@@ -53,7 +52,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(KEY)
     return (
       <div className="App">
       <div className='titles'>

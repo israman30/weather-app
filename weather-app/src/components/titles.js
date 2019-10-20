@@ -6,7 +6,5 @@ const Titles = () => (
         <p>Let's find out the weather of today..</p>
     </div>
 );
-    
-
- 
+     
 export default Titles;

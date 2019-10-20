@@ -30,6 +30,7 @@
   font-size: 25px;
   border:none;
   border-bottom: 2px #477 solid;
+  outline: none;
 }
 
 .form button {
@@ -39,6 +40,11 @@
   background: #477;
   color:#fff;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #479;
 }
 
 .form .weather {

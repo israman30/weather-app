@@ -7,19 +7,17 @@ import Forms from './components/form';
 import Weather from './components/weather';
 import KEY from './components/key';
 
-require('dotenv').config()
-
 const API_KEY = KEY;
 
 class App extends Component {
 
   state = {
-    temperature:undefined,
-    city:undefined,
-    country:undefined,
-    humidity:undefined,
-    description:undefined,
-    error:undefined
+    temperature: undefined,
+    city: undefined,
+    country: undefined,
+    humidity: undefined,
+    description: undefined,
+    error: undefined
   }
 
   getWeather = async (e) => {
@@ -35,20 +33,20 @@ class App extends Component {
       console.log(data);
       this.setState({
         temperature: data.main.temp,
-        city:data.name,
-        country:data.sys.country,
-        humidity:data.main.humidity,
-        description:data.weather[0].description,
+        city: data.name,
+        country: data.sys.country,
+        humidity: data.main.humidity,
+        description: data.weather[0].description,
         error:''
       });
     } else {
       this.setState({
         temperature: undefined,
-        city:undefined,
-        country:undefined,
-        humidity:undefined,
-        description:undefined,
-        error:'Please enter value'
+        city: undefined,
+        country: undefined,
+        humidity: undefined,
+        description: undefined,
+        error: 'Please enter value'
       });
     }
   }

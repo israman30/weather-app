@@ -5,9 +5,11 @@ import './App.css';
 import Titles from './components/titles';
 import Forms from './components/form';
 import Weather from './components/weather';
+import KEY from './components/key';
 
-const API_KEY = 'f755d47212d4330310d42041f6b06a21';
-// http://api.openweathermap.org/data/2.5/weather?q=Manchester,uk&appid=f755d47212d4330310d42041f6b06a21&=metric
+require('dotenv').config()
+
+const API_KEY = KEY;
 
 class App extends Component {
 

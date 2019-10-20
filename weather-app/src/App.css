@@ -45,6 +45,7 @@
 
 .form button:hover {
   background: #479;
+  box-shadow: 1px 1px 1px #777;
 }
 
 .form .weather {

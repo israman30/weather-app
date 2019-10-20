@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Forms = props => ( 
-    <form onSubmit={props.getWeather}>
+const Forms = ({ getWeather }) => ( 
+    <form onSubmit={getWeather}>
         <input type='text' name='city' placeholder='city'/>
         <input type='text' name='country' placeholder='country'/>
-        <button>get weather</button>
+        <button>Get Weather</button>
     </form>
 );
     
